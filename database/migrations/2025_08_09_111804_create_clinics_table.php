@@ -21,7 +21,7 @@ return new class extends Migration
             $table->enum('working_days', ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'])->nullable();
             $table->time('opening_time');
             $table->time('close_time');
-            $table->sting('status');
+            $table->string('status');
             $table->timestamps();
         });
     }

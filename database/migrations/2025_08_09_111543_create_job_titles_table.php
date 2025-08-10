@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('job_titles', function (Blueprint $table) {
             $table->id();
-            $table->stinr('name')->unique();
+            $table->string('name')->unique();
             $table->string('description')->nullable();
             $table->timestamps();
         });
