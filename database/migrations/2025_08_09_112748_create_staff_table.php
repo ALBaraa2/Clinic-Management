@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('clinic_id')->constrained('clinics')->onDelete('cascade');
-            $table->foreignId('job_title_id')->constrained('job_titles')->onDelete('cascade');
+            $table->string('job_title');
             $table->text('bio')->nullable();
             $table->time('start_time');
             $table->time('end_time');
